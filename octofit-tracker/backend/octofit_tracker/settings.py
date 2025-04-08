@@ -25,7 +25,7 @@ SECRET_KEY = "django-insecure-9$-0_*v!_9#oikvj2@s!yt_$4mk4ne+#8f)=(m*jzyf)sbh2$&
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'musical-telegram-5gvxxw54x4jg3996-8000.app.github.dev']
 
 
 # Application definition
