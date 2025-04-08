@@ -24,10 +24,9 @@ SECRET_KEY = os.getenv('DJANGO_SECRET_KEY', 'default-secret-key')
 if SECRET_KEY == 'default-secret-key':
     raise ValueError("The DJANGO_SECRET_KEY environment variable is not set.")
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = os.getenv('DJANGO_DEBUG', 'False') == 'True'
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'musical-telegram-5gvxxw54x4jg3996-8000.app.github.dev']
-
+ALLOWED_HOSTS = os.getenv('DJANGO_ALLOWED_HOSTS', 'localhost,127.0.0.1').split(',')
 
 # Application definition
 
